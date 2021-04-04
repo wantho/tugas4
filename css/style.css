@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+
+:root {
+    --very-dark-blue: hsl(238, 29%, 16%)
+--  red: hsl(14, 88%, 65%)
+--  violet: hsl(273, 75%, 66%)
+--  blue: hsl(240, 73%, 65%)
+}
+
+body {
+    width: 80%;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: blueviolet;
+
+}
+
+
+.box {
+    width: 1168px;
+    height:798px;
+    background-color: white;
+    margin: 10%;
+    border-radius: 30px;
+    padding: auto;
+}
+
+.img1 {
+    position: relative;
+    padding-top: 30%;
+    padding-left: -20%;
+    margin-left: -6%;
+    
+}
+
+.img2 {
+    position: relative;
+    left: -8%;
+    margin-top: -20%;
+}
+
+.img3 {
+    margin-top: -70%;
+    padding-top: -50%;
+    margin-left: -30%;
+}
+
+h1{
+    position: relative;
+    text-align: center; 
+    margin-top: -60%;   
+    left: 20%;
+}
+
+
+
+.accordion-item {
+    background-color: #fff;
+    color: #111;
+    
+    width: 40%;
+    left: 55%;
+    position: relative;
+    
+}
+
+.accordion-item-header {
+    position: relative;
+    text-align: left;
+    left: 5%;
+    padding-top: 3%;
+    display: flex;
+    cursor: pointer;
+    
+}
+
+
+.accordion-item-header::after{
+    content: "\02C5";
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    right: 2rem;
+    
+}
+
+.accordion-item-header.active::after {
+    content:"\02C4";
+    color: red;
+   
+}
+
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    
+    
+}
+
+.accordion-item-body-content {
+    padding: 2rem;
+    margin-top: 40%;
+    margin-left: 20%;
+    line-height: 1.5rem;
+    
+}
+
+.accordion-item-header.active + .accordion-item-body{
+    max-height: 500px;
+
+footer {
+    
+    text-align: center;
+    margin-left:5%
+}   
+
+@media screen and (max-width: 460px) {
+    .container{
+        width:50%;
+    }
+
+    .box {
+        width:40%;
+
+    }
+
+    .footer{
+        text-align: center;
+        left: 30%;
+    }
+
+
+
+}
